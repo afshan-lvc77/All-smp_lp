@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FVD | Link Process Server</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #e2e8f0; line-height: 1.6; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: auto; background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        h1 { color: #38bdf8; border-bottom: 2px solid #334155; padding-bottom: 10px; }
+        .status { display: inline-block; background: #10b981; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; margin-bottom: 20px; }
+        .section { margin-bottom: 25px; }
+        h2 { font-size: 1.2rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; }
+        code { background: #000; padding: 10px; border-radius: 6px; display: block; color: #f472b6; overflow-x: auto; margin-top: 10px; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 8px; padding-left: 20px; position: relative; }
+        li::before { content: "✔"; position: absolute; left: 0; color: #38bdf8; }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9rem; color: #64748b; }
+        .badge { background: #334155; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Fast Video Downloader Engine</h1>
+    <div class="status">Server Status: Online</div>
+
+    <div class="section">
+        <h2>About the Server</h2>
+        <p>Yeh ek high-performance modular server hai jo <strong>yt-dlp</strong> ki power use karke 4K tak ki original links extract karta hai. Ise specifically Android apps aur web tools ke liye design kiya gaya hai.</p>
+    </div>
+
+    <div class="section">
+    <h2>JSON Response Structure</h2>
+    <p>Success hone par server aisa data bhejta hai:</p>
+    <code>
+{
+  "status": "success",
+  "title": "Video Title",
+  "thumbnail": "https://...",
+  "videos": [
+    {
+      "quality": "720p",
+      "url": "https://...",
+      "size": "20MB"
+    }
+  ],
+  "audios": [
+    {
+      "quality": "128kbps",
+      "url": "https://...",
+      "size": "2MB"
+    }
+  ]
+}
+    </code>
+    </div>
+    
+
+    <div class="section">
+        <h2>Supported Platforms</h2>
+        <p>
+            <span class="badge">YouTube</span> <span class="badge">Instagram</span> 
+            <span class="badge">Facebook</span> <span class="badge">TikTok</span> 
+            <span class="badge">Moj</span> <span class="badge">X (Twitter)</span>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Usage Policy</h2>
+        <ul>
+            <li>Commercial use ke liye <strong>MR Shahid (MRA)</strong> ko credit dena zaroori hai.</li>
+            <li>Server ka misuse ya mass-scraping allow nahi hai.</li>
+            <li>Yeh server sirf link processing ke liye hai, hum koi bhi file host nahi karte.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        Developed with ❤️ by <strong>MRA Shahid</strong> | 2026 Enterprise Build
+    </div>
+</div>
+
+</body>
+</html>
